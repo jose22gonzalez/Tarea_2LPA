@@ -49,5 +49,7 @@
                 Height="23" 
                 Background="#FFCA1010" 
                 Click="ClickEliminar_Button"/>
+
+         <DataGrid x:Name="Ventanaconsultar" HorizontalAlignment="Left" Height="342" Margin="646,31,0,0" VerticalAlignment="Top" Width="420" d:ItemsSource="{d:SampleData ItemCount=5}"/>
     </Grid>
 </Window>

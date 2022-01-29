@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "my3eKpbTtWr2Ejzq8ilPXL2QOJL/xiLFSoYOkk08SE+uF/Jx7Qb+84ZGB7NW25UO2yXmN2r/Ax3CcIxiq0cGDg==",
+  "dgSpecHash": "OBbnv43GbUCPkP9iNaES9FLPytMn35zz7Ghx/Q0N52Wq7wGICpIbZRU35n0lXUS0N7ai5q87fDpY2v44jQ7qRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jose8\\OneDrive\\Escritorio\\Clase2022\\LabPA\\TareaPA_1\\TareaPA_1.csproj",
+  "projectFilePath": "C:\\Users\\jose8\\OneDrive\\Escritorio\\Clase2022\\LabPA\\Tarea_2\\Tarea_2LPA\\TareaPA_1\\TareaPA_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jose8\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jose8\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.1\\microsoft.data.sqlite.core.6.0.1.nupkg.sha512",

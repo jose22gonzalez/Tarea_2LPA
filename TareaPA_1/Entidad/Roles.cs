@@ -17,8 +17,5 @@ namespace TareaPA_1
             this.Fecha = fecha;
         }
 
-      
-
-       
     }
 }

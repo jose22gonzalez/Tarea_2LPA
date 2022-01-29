@@ -28,6 +28,8 @@ namespace TareaPA_1
         public MainWindow()
         {
             InitializeComponent();
+            var Listar = RolesBBL.GetLista();
+            Ventanaconsultar.ItemsSource = Listar;
         }
 
         public void ClickGuardar_Button(object sender, RoutedEventArgs e)
