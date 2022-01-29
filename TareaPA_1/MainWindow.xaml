@@ -5,51 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TareaPA_1"
         mc:Ignorable="d"
-        Title="Registro" Height="400" Width="500">
+        Title="Registro de roles" Height="666" Width="506" Icon="user_group.ico">
     <Grid>
      
-        <Label  Content="RolId:" HorizontalAlignment="Left" Margin="31,36,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label  Content="FechaCreacion:" HorizontalAlignment="Left" Margin="31,70,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label  Content="Descripcion:" HorizontalAlignment="Left" Margin="31,104,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label  Content="RolId:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label  Content="FechaCreacion:" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label  Content="Descripcion:" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
 
-        <TextBox x:Name="Rolid"  HorizontalAlignment="Left" Margin="139,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" FontSize="14"/>
-        <DatePicker x:Name="FechaCreacion" HorizontalAlignment="Left" Margin="139,76,0,0"  VerticalAlignment="Top" Width="169" FontSize="14"/>
-        <TextBox x:Name="Descripcionn" HorizontalAlignment="Left" Margin="139,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" FontSize="14"/>
+        <TextBox x:Name="Rolid"  HorizontalAlignment="Left" Margin="10,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" FontWeight="Bold" FontSize="14"/>
+
+        <DatePicker x:Name="FechaCreacion" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Width="414"/>
+
+        <TextBox x:Name="Descripcionn" HorizontalAlignment="Left" Margin="10,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414" FontWeight="Bold" FontSize="14"/>
        
 
         <Button Content="📄Guardar" 
-                HorizontalAlignment="Left" 
-                Margin="34,151,0,0" 
-                VerticalAlignment="Top" 
-                FontSize="14" 
-                FontWeight="Bold"    
-                Width="80" 
-                Height="23" 
+                HorizontalAlignment="Left" Margin="27,266,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Width="77" Height="23" 
                 Background="#FF2EBF22" 
                 Click="ClickGuardar_Button"/>
 
         <Button Content="📝Editar" 
-                HorizontalAlignment="Left" 
-                Margin="125,151,0,0" 
-                VerticalAlignment="Top" 
-                FontSize="14" 
-                FontWeight="Bold"   
-                Width="80" 
-                Height="23" 
+                HorizontalAlignment="Left" Margin="117,266,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Width="77" Height="23" 
                 Background="#FFC3BC20" 
                 Click="ClickEditar_Button"/>
 
         <Button Content="⛔Eliminar" 
-                HorizontalAlignment="Left" 
-                Margin="210,151,0,0" 
-                VerticalAlignment="Top" 
-                FontSize="14" 
-                FontWeight="Bold"   
-                Width="80" 
-                Height="23" 
+                HorizontalAlignment="Left" Margin="212,266,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" 
                 Background="#FFCA1010" 
                 Click="ClickEliminar_Button"/>
+        <Button Content="🔍Buscar" HorizontalAlignment="Left" Margin="165,72,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
 
-         <DataGrid x:Name="Ventanaconsultar" HorizontalAlignment="Left" Height="202" Margin="350,31,0,0" VerticalAlignment="Top" Width="200" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+         <DataGrid x:Name="Ventanaconsultar" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,325,160,34"/>
     </Grid>
 </Window>
