@@ -35,7 +35,8 @@ namespace TareaPA_1
         public void ClickGuardar_Button(object sender, RoutedEventArgs e)
         {
             Roles role = new Roles(Rolid.Text, Descripcionn.Text, FechaCreacion.Text);
-
+            var Listar = RolesBBL.GetLista();
+            Ventanaconsultar.ItemsSource = Listar;
             if (!RolesBBL.Existe(Descripcionn.Text))
             {
                 var paso = RolesBBL.Insertar(role);
