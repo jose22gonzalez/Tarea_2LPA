@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TareaPA_1"
         mc:Ignorable="d"
-        Title="Registro de roles" Height="666" Width="506" Icon="user_group.ico">
+        Title="Registro de roles"  Height="666" Width="506" >
     <Grid>
      
         <Label  Content="RolId:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>

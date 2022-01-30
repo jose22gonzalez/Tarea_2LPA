@@ -7,7 +7,7 @@ namespace TareaPA_1
         public DbSet<Roles> Roles {get; set;}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-        optionsBuilder.UseSqlite("Data Source = Roles.db");
+        optionsBuilder.UseSqlite(@"Data Source = DATA\Roles.db");
         }
     }
 }
