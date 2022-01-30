@@ -25,25 +25,26 @@ namespace TareaPA_1
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
-            var Listar = RolesBBL.GetLista();
-            Ventanaconsultar.ItemsSource = Listar;
+            
         }
 
         public void ClickGuardar_Button(object sender, RoutedEventArgs e)
         {
             Roles role = new Roles(Rolid.Text, Descripcionn.Text, FechaCreacion.Text);
-            var Listar = RolesBBL.GetLista();
-            Ventanaconsultar.ItemsSource = Listar;
+            
             if (!RolesBBL.Existe(Descripcionn.Text))
             {
                 var paso = RolesBBL.Insertar(role);
-                
+
                 MessageBox.Show("Se ha agregado exitozamente");
-                
-            }else{
+
+            }
+            else
+            {
                 MessageBox.Show("La descripcion que ingreso ya existe");
             }
         }
@@ -76,6 +77,22 @@ namespace TareaPA_1
             {
                 MessageBox.Show("No fue posible Eliminar", "Fallo",
                 MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        public void ClickActualizar_Button(object sender, RoutedEventArgs e)
+        {
+            var Listar = RolesBBL.GetLista();
+            Ventanaconsultar.ItemsSource = Listar;
+        }
+
+        public void ClickBuscar_Button(object sender, RoutedEventArgs e)
+        {
+            if(!RolesBBL.Existe(Rolid.Text))
+            {
+                MessageBox.Show("Existe" + Rolid.Text);
+            }else{
+                MessageBox.Show("No existe el RolID" + Rolid.Text);
             }
         }
 

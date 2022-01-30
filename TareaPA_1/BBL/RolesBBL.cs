@@ -100,5 +100,25 @@ namespace TareaPA_1
             return encontrado;
         }
 
+        public static Roles Buscar(string rolesID)
+        {
+            Contexto contexto = new Contexto();
+            Roles rol;
+
+            try{
+                rol = contexto.Roles.Find(rolesID);
+            }
+            catch(Exception){
+                throw;
+            }
+            finally{
+                contexto.Dispose();
+            }
+
+            return rol;
+        }
+
+
+
     }
 }
