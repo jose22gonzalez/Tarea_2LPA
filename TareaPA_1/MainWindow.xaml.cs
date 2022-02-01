@@ -88,7 +88,7 @@ namespace TareaPA_1
 
         public void ClickBuscar_Button(object sender, RoutedEventArgs e)
         {
-            if(!RolesBBL.Existe(Rolid.Text))
+            if(!RolesBBL.Existe(Rolid.Text))//Probar
             {
                 MessageBox.Show("Existe" + Rolid.Text);
             }else{
